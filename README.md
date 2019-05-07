@@ -1,6 +1,6 @@
 # rivet-reading-progress-bar
 
-Applying this class to an element will add a progress bar showing reading progress (how much is left to scroll).
+Applying the class `rvt-reading-progress` to an element will add a progress bar showing reading progress (how much is left to scroll).
 
 ```
 <!-- When the target element is in relation to the the scrolling of the full window. -->
