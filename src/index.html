@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rivet Reading Progress Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://assets.uits.iu.edu/css/rivet/1.4.0/rivet.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/github.min.css"
+    />
+    <link 
+      rel="stylesheet" 
+      href="./css/code-snippet-styling.css" 
+    />
+
+    <!--
+      Update the path below to your renamed CSS file, such as:
+
+      ./css/rivet-add-on-name.css
+    -->
+
+    <link rel="stylesheet" href="./css/rivet-reading-progress.css" />
+  </head>
+  <body>
+    <div
+      class="rvt-container rvt-container--center rvt-container--sophomore rvt-m-top-xxl rvt-m-bottom-xxl rvt-typeset"
+    >
+
+      <!--
+        Write your add-on documentation below.
+
+        Use the component documentation on the Rivet website as a guide for how
+        to write and structure your add-on documentation:
+
+        https://rivet.iu.edu/components/
+
+        For general tips on writing effective documentation, see the User
+        Experience Office website:
+
+        https://ux.iu.edu/writings/writing-effective-documentation/
+      -->
+      
+      <h1>Rivet Reading Progress Bar</h1>
+      <p class="rvt-m-top-xxs rvt-m-bottom-xxl rvt-ts-20">
+        Applying this class to an element will add a progress bar showing reading progress (how much is left to scroll).
+      </p>
+
+      <!--
+        Your add-on documentation should include code samples that show how a
+        developer can use each variation of your new component.
+
+        Example code inside <pre> tags must be escaped. Escaping example code
+        by hand is a pain, so here's a website into which you can paste your
+        example code and get an escaped version back:
+
+        https://codebeautify.org/html-escape-unescape
+
+        The code examples below show how you might document the HTML and
+        JavaScript for a new button component that shows a message when clicked.
+      -->
+
+      <h2>Using the component</h2>
+      
+      <!-- HTML -->
+      <div class="rvt-example">
+
+        <div class="rvt-example__demo">
+          
+          <div class="rvt-text-regular rvt-reading-progress">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et tellus fermentum, volutpat urna sed, congue lectus. Aliquam cursus vehicula nunc, sit amet volutpat massa consectetur eu. Donec consectetur magna vel eros vehicula pellentesque. Morbi neque lacus, vehicula vitae nunc sed, iaculis molestie risus. Mauris congue neque a semper commodo. Sed quis quam vitae massa convallis volutpat eu non turpis. Etiam non neque porttitor, laoreet lacus ornare, dictum purus. Vestibulum volutpat vestibulum leo vitae tincidunt. Aenean ante mauris, vehicula id vehicula eget, laoreet facilisis urna. Vivamus dignissim condimentum feugiat.</p>
+
+            <p>Quisque imperdiet fermentum quam vitae mollis. Donec eget quam augue. Ut non lobortis sem, non malesuada sapien. Pellentesque bibendum elementum quam pretium sodales. Suspendisse porta purus massa, vitae consequat urna viverra eget. Aliquam eget diam ex. Fusce condimentum laoreet justo efficitur laoreet. Cras vitae faucibus nulla, ut faucibus libero. Ut erat dui, porta ut vulputate sed, convallis quis velit. Ut nec sapien sit amet erat fermentum venenatis at a arcu. Praesent vel orci eu lacus elementum volutpat. Aliquam semper diam sed massa dapibus eleifend. Etiam id arcu ut nunc dapibus molestie vitae at mi. Quisque dictum, augue vitae tincidunt posuere, magna urna tristique urna, quis fringilla ex est vitae nisl. Integer laoreet odio a maximus tempor.</p>
+          </div>
+
+        </div>
+
+        <!--div class="rvt-example__demo rvt-reading-progress-container" style="height: 400px; overflow-y: scroll;">
+          
+          <div class="rvt-text-regular rvt-reading-progress">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et tellus fermentum, volutpat urna sed, congue lectus. Aliquam cursus vehicula nunc, sit amet volutpat massa consectetur eu. Donec consectetur magna vel eros vehicula pellentesque. Morbi neque lacus, vehicula vitae nunc sed, iaculis molestie risus. Mauris congue neque a semper commodo. Sed quis quam vitae massa convallis volutpat eu non turpis. Etiam non neque porttitor, laoreet lacus ornare, dictum purus. Vestibulum volutpat vestibulum leo vitae tincidunt. Aenean ante mauris, vehicula id vehicula eget, laoreet facilisis urna. Vivamus dignissim condimentum feugiat.</p>
+
+            <p>Quisque imperdiet fermentum quam vitae mollis. Donec eget quam augue. Ut non lobortis sem, non malesuada sapien. Pellentesque bibendum elementum quam pretium sodales. Suspendisse porta purus massa, vitae consequat urna viverra eget. Aliquam eget diam ex. Fusce condimentum laoreet justo efficitur laoreet. Cras vitae faucibus nulla, ut faucibus libero. Ut erat dui, porta ut vulputate sed, convallis quis velit. Ut nec sapien sit amet erat fermentum venenatis at a arcu. Praesent vel orci eu lacus elementum volutpat. Aliquam semper diam sed massa dapibus eleifend. Etiam id arcu ut nunc dapibus molestie vitae at mi. Quisque dictum, augue vitae tincidunt posuere, magna urna tristique urna, quis fringilla ex est vitae nisl. Integer laoreet odio a maximus tempor.</p>
+
+            <p>Sed est risus, pulvinar sed augue eget, consequat tempor purus. Sed quis nunc sed ex lobortis posuere. Morbi efficitur urna in tincidunt varius. Vivamus quis mauris sed sem vehicula cursus. In hac habitasse platea dictumst. Aenean quis finibus odio, ut malesuada felis. Pellentesque ipsum ex, faucibus nec fermentum a, posuere quis risus.</p>
+
+            <p>Etiam venenatis sem vel lobortis fringilla. Nam luctus mauris id tempus volutpat. Vestibulum viverra eros et dolor venenatis, vitae dignissim arcu lacinia. Nulla ut hendrerit odio. Aenean eget auctor mauris. Curabitur lacinia maximus ante dapibus iaculis. Morbi lacinia molestie odio, eu sagittis nibh tincidunt nec. Nullam molestie tincidunt dapibus. Nam porttitor venenatis lorem a eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce et dictum arcu. Vestibulum in libero vitae tellus placerat porta.</p>
+
+            <p>Cras tempus accumsan turpis, ac egestas orci ornare id. Vestibulum luctus in diam eu interdum. Suspendisse in pretium est. Duis iaculis nibh id interdum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam convallis nisi at tortor posuere, eu tincidunt leo gravida. Praesent dignissim suscipit est vitae tempus. Nunc commodo risus condimentum dui consequat elementum. Curabitur dignissim enim id lacinia mattis.</p>
+          </div>
+
+        </div-->
+        <div class="rvt-example__code">
+          <pre><code class="html">&lt;!-- When the target element is in relation to the the scrolling of the full window. --&gt;
+&lt;div class=&quot;rvt-reading-progress&quot;&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et tellus fermentum, volutpat urna sed, congue lectus. Aliquam cursus vehicula nunc, sit amet volutpat massa consectetur eu. Donec consectetur magna vel eros vehicula pellentesque. Morbi neque lacus, vehicula vitae nunc sed, iaculis molestie risus. Mauris congue neque a semper commodo. Sed quis quam vitae massa convallis volutpat eu non turpis. Etiam non neque porttitor, laoreet lacus ornare, dictum purus. Vestibulum volutpat vestibulum leo vitae tincidunt. Aenean ante mauris, vehicula id vehicula eget, laoreet facilisis urna. Vivamus dignissim condimentum feugiat.&lt;/p&gt;
+  &lt;p&gt;Quisque imperdiet fermentum quam vitae mollis. Donec eget quam augue. Ut non lobortis sem, non malesuada sapien. Pellentesque bibendum elementum quam pretium sodales. Suspendisse porta purus massa, vitae consequat urna viverra eget. Aliquam eget diam ex. Fusce condimentum laoreet justo efficitur laoreet. Cras vitae faucibus nulla, ut faucibus libero. Ut erat dui, porta ut vulputate sed, convallis quis velit. Ut nec sapien sit amet erat fermentum venenatis at a arcu. Praesent vel orci eu lacus elementum volutpat. Aliquam semper diam sed massa dapibus eleifend. Etiam id arcu ut nunc dapibus molestie vitae at mi. Quisque dictum, augue vitae tincidunt posuere, magna urna tristique urna, quis fringilla ex est vitae nisl. Integer laoreet odio a maximus tempor.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- When the target element is contained in a smaller element that scrolls. --&gt;
+&lt;div class=&quot;rvt-reading-progress-container&quot; style=&quot;height: 200px; overflow-y: scroll;&quot;&gt;
+  &lt;div class=&quot;rvt-reading-progress&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et tellus fermentum, volutpat urna sed, congue lectus. Aliquam cursus vehicula nunc, sit amet volutpat massa consectetur eu. Donec consectetur magna vel eros vehicula pellentesque. Morbi neque lacus, vehicula vitae nunc sed, iaculis molestie risus. Mauris congue neque a semper commodo. Sed quis quam vitae massa convallis volutpat eu non turpis. Etiam non neque porttitor, laoreet lacus ornare, dictum purus. Vestibulum volutpat vestibulum leo vitae tincidunt. Aenean ante mauris, vehicula id vehicula eget, laoreet facilisis urna. Vivamus dignissim condimentum feugiat.&lt;/p&gt;
+    &lt;p&gt;Quisque imperdiet fermentum quam vitae mollis. Donec eget quam augue. Ut non lobortis sem, non malesuada sapien. Pellentesque bibendum elementum quam pretium sodales. Suspendisse porta purus massa, vitae consequat urna viverra eget. Aliquam eget diam ex. Fusce condimentum laoreet justo efficitur laoreet. Cras vitae faucibus nulla, ut faucibus libero. Ut erat dui, porta ut vulputate sed, convallis quis velit. Ut nec sapien sit amet erat fermentum venenatis at a arcu. Praesent vel orci eu lacus elementum volutpat. Aliquam semper diam sed massa dapibus eleifend. Etiam id arcu ut nunc dapibus molestie vitae at mi. Quisque dictum, augue vitae tincidunt posuere, magna urna tristique urna, quis fringilla ex est vitae nisl. Integer laoreet odio a maximus tempor.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      
+
+      <!--
+        Your add-on documentation should let developers know what use cases
+        your new component is intended for.
+
+        Example: https://rivet.iu.edu/components/page-content/badges/#when-to-use
+      -->
+
+      <h2>When to use</h2>
+      <ul>
+        <li>When dealing with longer text or a longer feature page to give your user some sort of context about where they are in the larger document.</li>
+      </ul>
+
+      <!--
+        Your add-on documentation should also let developers know what use
+        cases might call for a different component than the one you've built.
+
+        Example: https://rivet.iu.edu/components/page-content/badges/#when-to-consider-something-else
+      -->
+
+      <h2>When to consider something else</h2>
+      <ul>
+        <li>When not dealing with long text or a long feature page, you may not need to add this feature.</li>
+      </ul>
+
+      <!--
+        Your add-on documentation should let developers know if there's
+        anything they need to keep in mind in order for your component to
+        be accessible.
+
+        Example: https://rivet.iu.edu/components/page-content/badges/#accessibility
+      -->
+
+      <h2>Accessibility</h2>
+      <p>Invisible text is placed in the progress bar that tells the user what percentage of the article they have read. It also adds this text as a tooltip on the progress bar.</p>
+
+      <!--
+        Your add-on documentation should let developers know if there's
+        anything they need to keep in mind or be careful of when implementing
+        your add-on, including additional options or notes about handling
+        corner cases.
+
+        Example: https://rivet.iu.edu/components/navigation/dropdown/#implementation-notes
+      -->
+
+      <h2>Implementation notes</h2>
+      <p>There are two ways to implement the progress bar depending on your scenario.</p>
+      <ol>
+        <li>
+          <p><strong>Your target element is measured in relation to the scrolling of the window.</strong></p>
+          
+          <p>Add the class <code>rvt-reading-progress</code> to your target element. If this class is present on the page, function <code>Constructor.prototype.init</code> will add the necessary progress bar to the end of <code>body</code>:</p>
+
+          <code>&lt;div class=&quot;rvt-progress-container&quot; id=&quot;progress-bar&quot; title=&quot;&quot;&gt;&lt;div class=&quot;rvt-progress-bar&quot; id=&quot;reader-progress&quot;&gt;&lt;/div&gt;&lt;/div&gt;</code>
+
+          <p>If your target element has a greater height than your browser window, the scroll progress will be measured from when the top of the target leaves the top of the window to when the bottom of the element enters the bottom of the window. The purpose of this is so that if you're targeting an element that is basically the size of the whole page, your progress bar will reach 100% when you reach the bottom of the page.</p>
+
+          <p>If your target element has a lesser height than your browser window, the scroll progress will be measured from when the top of the target leaves the top of the window to when the bottom of the target element leaves the top of window.</p>
+          
+        </li>
+        <li>
+          <p><strong>Your target element is measured in relation to the scrolling of an element other than the window.</strong></p>
+
+          <p>Add the class <code>rvt-reading-progress</code> to your target element and the class <code>rvt-reading-progress-container</code> to the container element. If class <code>rvt-reading-progress</code> is present on the page, function <code>Constructor.prototype.init</code> will add the necessary progress bar to the end of your container:</p>
+
+          <code>&lt;div class=&quot;rvt-progress-container&quot; id=&quot;progress-bar&quot; title=&quot;&quot;&gt;&lt;div class=&quot;rvt-progress-bar&quot; id=&quot;reader-progress&quot;&gt;&lt;/div&gt;&lt;/div&gt;</code>
+
+        </li>
+      </ol>
+
+      <p>At this time, you can only have one instance of <code>rvt-reading-progress</code> on your page.</p>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+    
+    <!--
+      Update the path below to your renamed JavaScript file, such as:
+
+      ./js/rivet-add-on-name.js
+    -->
+
+    <script src="./js/rivet-reading-progress.js"></script>
+    <script>
+
+      // Initializes syntax highlighting for your code examples.
+      hljs.initHighlightingOnLoad();
+
+      // If your add-on requires JavaScript, do any initialization here.
+      const component = new MyComponent('.rvt-reading-progress');
+      component.init();
+
+    </script>
+  </body>
+</html>

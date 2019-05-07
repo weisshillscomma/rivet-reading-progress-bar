@@ -1,0 +1,36 @@
+// Rivet's Sass variables are available for you to use in your add-on's styles.
+// For a complete list of Rivet Sass variables, see the Rivet documentation:
+//
+// https://rivet.iu.edu/getting-started/sass/
+
+ @import "../../node_modules/rivet-uits/sass/core/variables";
+
+// Write your add-on's styles below.
+
+.rvt-reading-progress-container {
+	position: sticky;
+	.rvt-progress-container {
+		position: absolute;
+		top: 0;
+	}
+}
+
+.rvt-progress-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: $xs;
+	background-color: $color-blue--300;
+	transition: none;
+	.rvt-progress-bar {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		background-color: $color-blue;
+		font-size: 0;
+		line-height: 0;
+	}
+}
