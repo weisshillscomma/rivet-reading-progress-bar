@@ -35,18 +35,18 @@ Invisible text is placed in the progress bar that tells the user what percentage
 There are two ways to implement the progress bar depending on your scenario.
 1. **Your target element is measured in relation to the scrolling of the window.**
 
-⋅⋅⋅Add the class `rvt-reading-progress` to your target element. If this class is present on the page, function `Constructor.prototype.init` will add the necessary progress bar to the end of body:
+   Add the class `rvt-reading-progress` to your target element. If this class is present on the page, function `Constructor.prototype.init` will add the necessary progress bar to the end of body:
 
-⋅⋅⋅```<div class="rvt-progress-container" id="progress-bar" title=""><div class="rvt-progress-bar" id="reader-progress"></div></div>```
+   ```<div class="rvt-progress-container" id="progress-bar" title=""><div class="rvt-progress-bar" id="reader-progress"></div></div>```
 
-⋅⋅⋅If your target element has a greater height than your browser window, the scroll progress will be measured from when the top of the target leaves the top of the window to when the bottom of the element enters the bottom of the window. The purpose of this is so that if you're targeting an element that is basically the size of the whole page, your progress bar will reach 100% when you reach the bottom of the page.
+   If your target element has a greater height than your browser window, the scroll progress will be measured from when the top of the target leaves the top of the window to when the bottom of the element enters the bottom of the window. The purpose of this is so that if you're targeting an element that is basically the size of the whole page, your progress bar will reach 100% when you reach the bottom of the page.
 
-⋅⋅⋅If your target element has a lesser height than your browser window, the scroll progress will be measured from when the top of the target leaves the top of the window to when the bottom of the target element leaves the top of window.
+   If your target element has a lesser height than your browser window, the scroll progress will be measured from when the top of the target leaves the top of the window to when the bottom of the target element leaves the top of window.
 
 2. **Your target element is measured in relation to the scrolling of an element other than the window.**
 
-⋅⋅⋅Add the class `rvt-reading-progress` to your target element and the class `rvt-reading-progress-container` to the container element. If class `rvt-reading-progress` is present on the page, function `Constructor.prototype.init` will add the necessary progress bar to the end of your container:
+   Add the class `rvt-reading-progress` to your target element and the class `rvt-reading-progress-container` to the container element. If class `rvt-reading-progress` is present on the page, function `Constructor.prototype.init` will add the necessary progress bar to the end of your container:
 
-⋅⋅⋅```<div class="rvt-progress-container" id="progress-bar" title=""><div class="rvt-progress-bar" id="reader-progress"></div></div>```
+   ```<div class="rvt-progress-container" id="progress-bar" title=""><div class="rvt-progress-bar" id="reader-progress"></div></div>```
 
 At this time, you can only have one instance of `rvt-reading-progress` on your page.
